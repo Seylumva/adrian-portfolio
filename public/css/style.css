@@ -1,0 +1,312 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+/* Utility */
+
+.heading {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.heading h2 {
+  font-size: 2rem;
+}
+
+.heading p {
+  font-size: 1.2rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.6em 1em;
+  background: #c18f59;
+  color: #fff;
+  text-decoration: none;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: sans-serif;
+}
+
+.no-scroll {
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+}
+
+.nav-toggle {
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+
+  background: none;
+  border: none;
+}
+
+.nav-toggle--light > .line {
+  background: #fff;
+}
+
+.line {
+  height: 3px;
+  width: 100%;
+  background: #fff;
+  transition: background 250ms ease;
+}
+
+/* Main Header */
+
+.header {
+  position: sticky;
+  top: 0;
+  background: #292524;
+  color: #fff;
+  padding-block: 1em;
+  z-index: 999;
+}
+
+.site-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.site-title span {
+  color: skyblue;
+}
+
+.nav-toggle {
+  position: relative;
+  z-index: 900;
+}
+
+.nav {
+  position: fixed;
+  z-index: 800;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 100vw;
+  place-items: center;
+  background: rgb(18, 18, 18);
+  transition: left 250ms ease;
+}
+
+.nav--visible {
+  left: 50%;
+}
+
+.nav--visible .nav__link {
+  opacity: 1;
+}
+
+.lightbox {
+  display: block;
+  position: fixed;
+}
+
+.nav--visible + .lightbox {
+  background: rgba(0, 0, 0, 0.5);
+  display: block;
+  z-index: 700;
+  inset: 0 0 0 0;
+  transition: all 250ms ease;
+}
+
+.nav__links {
+  padding-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  gap: 1rem;
+}
+
+.nav__item {
+  text-align: center;
+}
+
+.nav__link {
+  padding-block: 1rem;
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #afafaf;
+  text-decoration: none;
+  transition: opacity 350ms ease-in 150ms;
+  opacity: 0;
+}
+
+.nav__link:hover {
+  color: #fff;
+  background: rgba(0, 0, 0, 0.35);
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+  height: calc(100vh - 67px);
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  background-color: #171717;
+  color: #fff;
+}
+
+.hero__image img {
+  object-fit: cover;
+  width: 70%;
+  margin: 0 auto;
+  /* height: 350px; */
+  aspect-ratio: 1 / 1.2;
+}
+
+.hero__image {
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero__text {
+  width: 70%;
+  align-self: center;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.hero__title > h1 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.hero__title > span {
+  color: #c18f59;
+  font-size: 0.9rem;
+  display: block;
+  font-weight: 700;
+}
+
+.hero__title > span:first-of-type {
+  text-align: left;
+}
+
+.hero__title > span:last-of-type {
+  margin-top: 5px;
+  text-align: right;
+}
+
+.hero__text p {
+  margin-bottom: 0.2em;
+  font-size: 0.9rem;
+}
+
+.hero__links {
+  display: flex;
+  gap: 0.5em;
+}
+
+/* Project / Contact Styles */
+
+.project-showcase,
+.contact {
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+}
+
+/* Project Section */
+.project-showcase {
+  background: #f5f5f5;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.project {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+
+  border-radius: 7px;
+  overflow: hidden;
+  background: rgba(120, 112, 107, 0.4);
+  color: rgb(18, 18, 18);
+}
+
+.project__text {
+  padding: 1.8rem 1.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.project__text h3 {
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.project__text p {
+  font-size: 0.95rem;
+}
+
+.project__text p:last-of-type {
+  margin-bottom: 0.5rem;
+}
+
+.project__text > div {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.project__image img {
+  height: 225px;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Contact Form */
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  font-size: 2rem;
+}
+
+.socials a {
+  width: 65px;
+  height: 65px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  color: hsl(31, 60%, 60%);
+  transition: background 350ms ease;
+}
+
+.socials a:hover {
+  background: rgba(122, 78, 31, 0.1);
+}

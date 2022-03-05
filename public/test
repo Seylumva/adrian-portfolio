@@ -1,0 +1,14 @@
+<div class="site-title">AD.dev</div>
+<button class="nav-toggle">
+  <div class="line"></div>
+  <div class="line"></div>
+  <div class="line"></div>
+</button>
+<nav class="nav">
+  <ul class="nav__links">
+    <!-- <li class="nav__item"><a href="#" class="nav__link">About</a></li> -->
+    <li class="nav__item"><a href="#" class="nav__link">Projects</a></li>
+    <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+  </ul>
+</nav>
+<div class="lightbox"></div>
