@@ -167,22 +167,24 @@ html {
   height: calc(100vh - 67px);
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
+  justify-content: center;
+  align-items: center;
   background-color: #171717;
   color: #fff;
 }
 
 .hero__image img {
   object-fit: cover;
-  width: 70%;
+  height: 100%;
+  /* width: 50%; */
   margin: 0 auto;
   /* height: 350px; */
-  aspect-ratio: 1 / 1.2;
+  aspect-ratio: 1 / 1.5;
 }
 
 .hero__image {
-  margin-top: 2rem;
-  margin-bottom: 1.5rem;
+  height: 35%;
+  margin-bottom: 2rem;
 }
 
 .hero__text {
